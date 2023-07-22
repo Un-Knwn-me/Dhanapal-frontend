@@ -89,6 +89,7 @@ export default Contact;
 // Add contact
 
 function AddContact({ contacts, setContacts }) {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [fullName, setFullName] = useState("");
   const [companyName, setCompanyName] = useState("");
@@ -136,6 +137,7 @@ function AddContact({ contacts, setContacts }) {
       if (response.status === 200) {
 
         setOpen(false);
+        navigate('/');
         toast.success(response.data.message);
       }
     } catch (error) {
