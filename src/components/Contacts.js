@@ -262,16 +262,20 @@ function AddContact({ contacts, setContacts }) {
                       sx={{ ml: 4 }}
                       id="standard-basic"
                       label="City"
+                      defaultValue="Coimbatore"
                       variant="standard"
                       value={city}
+                      disabled
                       onChange={(e) => setCity(e.target.value)}
                     />
                     <TextField
                       sx={{ ml: 4 }}
                       id="standard-basic"
                       label="State"
+                      defaultValue="Tamil nadu"
                       variant="standard"
                       value={state}
+                      disabled
                       onChange={(e) => setState(e.target.value)}
                     />
                     <TextField
