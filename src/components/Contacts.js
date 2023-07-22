@@ -49,7 +49,7 @@ const Contact = ({contacts, setContacts}) => {
                                 variant="h6"
                                 color="#00695f"
                               >
-                                {contact.fullName}
+                                {contact.companyName}
                               </Typography>
                               <Typography
                                 variant="subtitle1"
