@@ -97,8 +97,8 @@ function AddContact({ contacts, setContacts }) {
   const [mobile, setMobile] = useState("");
   const [website, setWebsite] = useState("");
   const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState("");
+  // const [city, setCity] = useState("");
+  // const [state, setState] = useState("");
   const [pincode, setPincode] = useState("");
   const [map, setMap] = useState("");
   
@@ -120,8 +120,8 @@ function AddContact({ contacts, setContacts }) {
       mobile,
       email,
       address,
-      city,
-      state,
+      // city,
+      // state,
       pincode,
       map,
       website
@@ -264,9 +264,9 @@ function AddContact({ contacts, setContacts }) {
                       label="City"
                       defaultValue="Coimbatore"
                       variant="standard"
-                      value={city}
+                      // value={city}
                       disabled
-                      onChange={(e) => setCity(e.target.value)}
+                      // onChange={(e) => setCity(e.target.value)}
                     />
                     <TextField
                       sx={{ ml: 4 }}
@@ -274,9 +274,9 @@ function AddContact({ contacts, setContacts }) {
                       label="State"
                       defaultValue="Tamil nadu"
                       variant="standard"
-                      value={state}
+                      // value={state}
                       disabled
-                      onChange={(e) => setState(e.target.value)}
+                      // onChange={(e) => setState(e.target.value)}
                     />
                     <TextField
                       sx={{ ml: 4 }}
